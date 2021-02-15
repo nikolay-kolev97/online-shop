@@ -1,74 +1,121 @@
 *{
-    margin:0;
-    outline:0;
+    margin: 0;
+    outline: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    position:absolute;
+body{
+
 }
 
-header img{
-    width:100%;
-    height: 300px;
-    
+header div img{
+    width: 100%;
+    height: 30%;
 }
 
-header h1{
-    font-size: 80px;
-    margin: -200px 0 0 40px;
-    z-index: 1;
-    color: white;
-    font-style: italic;
-    animation: slideBottom 3s;
-}
-
-header h4{
-    color: white;
-    z-index: auto;
-    margin:0 0 0 40px;
-    font-size: 25px;
-    animation:slideBottom 3s;
-}
-
-aside{
-    float:right;
-    display: inline;
-    animation: slideBottom 3s;
-}
-
-aside ul{
+header div h1{
+    display: inline-block;
     position: relative;
-    margin: -250px 25px 0 0;
+    font-size: 70px;
+    font-style: italic;
+    color: white;
+    margin: -190px 0 0 0;
+    padding-left: 30px;
 }
 
-aside ul li{
+header .up_nav{
+    display: inline;
+    position: relative;
+    float: right;
     font-size: 25px;
-    color:white ;
-    list-style:none;
+    margin: 0 15px -30px 0;
 }
 
-header nav .navigation{
-    position: sticky;
-    margin-top:70px;
-    background-color:rgba(226, 65, 60, 0.795);
-    overflow: hidden;
-    padding: 10px 15px 10px 15px;
-    animation: slideBottom 2s;
-    overflow: hidden;
+header .up_nav a{
+    color: white;
+    padding: 0 15px;
+    border-right: 2px solid black;
 }
 
-header nav .navigation a{
-    padding:10px 10px 10px 10px;    
-    color:white;
-    text-align: center;
+header .search-box{
+   display: inline-block;
+   position: relative;
+   left: 50%;
+   background: white;
+   margin-top: -140px;
+   transform: translate(-50%,-50%);
+   border-radius: 40px;
+   width: 40%;
+}
+
+header .search-box .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: black;
+    font-size: 30px;
+    transition: 0.4s;
+    line-height: 50px;
+    width:90%;
+}
+
+header .right_nav{
+    display: inline;
+    position: relative;
+    float: right;
+    right: 7%;
+    margin-top: -150px;
+}
+
+header .right_nav a{
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 25px;
     text-decoration: none;
-    font-size: 18px;
+    color:white;
+    border-radius: 20px;
 }
 
-header nav .navigation a:hover{
-    background-color: yellow;
-    color: black;;
+header .right_nav #cart{
+    background-color: red;
+}
+
+header .right_nav #login{
+    background-color: black;
+}
+
+main .top_nav{
+    display: inline-block;
+    position: relative;
+    background: black;
+    width: 100%;
+    padding: 20px 0;
+}
+
+main .top_nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.slideshow{
+    position: relative;
+    background-image: url("./photos/slider_image.jpg");
+    width: 80%;
+    height: 500px;
+    left: 10%;
+    margin-top: 10px;
+    background-size: 100% 100%;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url("./photos/slider_image.jpg");}
+    35%{background-image: url("./photos/slider_photography.jpg");}
+    75%{background-image: url("./photos/slider_iphone.jpg") ;}
 }
 
 .polaroid{
@@ -96,16 +143,78 @@ p{
     font-size:20px;
 }
 
-@keyframes slideBottom{
-    from{
-        margin-top: -50%;
-    }
+
+
+ main .footer-container{
+    position: relative;
+    background: black;
+    height: 400px;
+    width: 100%;
 }
 
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
+main .footer-container .footer{
+    width: 100%;
+    height: 40vh;
+    background: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
+main .footer-container .footer .footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right:15rem;
+}
+.footer-heading h1{
+    margin-top: 2rem;
+    font-size: 50px;
+    font-style: italic;
+}
 
+.footer-heading h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.footer-heading #social::after{
+    content: ' ';
+    background-image: url("./photos/facebook.png");
+}
+
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    font-size: 17px;
+}
+
+.footer-heading a:hover{
+    color: rgb(48, 95, 248);
+    transition: 0.4s ease-out;
+}
+ 
+main .footer-container .footer-bottom{
+    display: inline;
+    position: absolute;
+    background: #343a40;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+} 
+
+main .footer-container .footer-bottom .credit-card{
+    position: relative;
+    margin: 0 10px 80px 0;
+}
+main .footer-container .footer-bottom .credit-card img{
+    float: right;
+    padding-right: 1rem;
+}
