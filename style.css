@@ -10,6 +10,7 @@ body{
 }
 
 header div img{
+    
     width: 100%;
     height: 30%;
 }
@@ -20,22 +21,12 @@ header div h1{
     font-size: 70px;
     font-style: italic;
     color: white;
-    margin: -190px 0 0 0;
+    margin: -180px 0 0 0;
     padding-left: 30px;
 }
 
-header .up_nav{
-    display: inline;
-    position: relative;
-    float: right;
-    font-size: 25px;
-    margin: 0 15px -30px 0;
-}
-
-header .up_nav a{
-    color: white;
-    padding: 0 15px;
-    border-right: 2px solid black;
+.nav-item{
+    font-size: 15px;
 }
 
 header .search-box{
@@ -43,7 +34,7 @@ header .search-box{
    position: relative;
    left: 50%;
    background: white;
-   margin-top: -140px;
+   margin-top: -130px;
    transform: translate(-50%,-50%);
    border-radius: 40px;
    width: 40%;
@@ -70,7 +61,7 @@ header .right_nav{
 }
 
 header .right_nav a{
-    padding: 15px 30px;
+    padding: 15px 30px ;
     margin-right: 20px;
     font-size: 25px;
     text-decoration: none;
@@ -86,19 +77,8 @@ header .right_nav #login{
     background-color: black;
 }
 
-main .top_nav{
-    display: inline-block;
-    position: relative;
-    background: black;
+.btn-group{
     width: 100%;
-    padding: 20px 0;
-}
-
-main .top_nav a{
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-size: 20px;
 }
 
 .slideshow{
@@ -180,11 +160,6 @@ main .footer-container .footer .footer-heading{
     
 }
 
-.footer-heading #social::after{
-    content: ' ';
-    background-image: url("./photos/facebook.png");
-}
-
 .footer-heading a{
     color: white;
     text-decoration: none;
@@ -203,7 +178,7 @@ main .footer-container .footer-bottom{
     background: #343a40;
     color: white;
     width: 100%;
-    height: 50px;
+    height: 60px;
     text-align: left;
     bottom: 0;
     left: 0;
@@ -212,7 +187,8 @@ main .footer-container .footer-bottom{
 
 main .footer-container .footer-bottom .credit-card{
     position: relative;
-    margin: 0 10px 80px 0;
+    margin: -18px 10px 80px 0;
+    
 }
 main .footer-container .footer-bottom .credit-card img{
     float: right;

@@ -3,17 +3,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>NikaShop</title>
+    <script src="https://kit.fontawesome.com/1905779436.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section>
         <header>
-            <div class="up_nav">
-                <a href="#">Registration</a>
-                <a href="#">About us</a>
-                <a href="#">Contacts</a>
-            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Registration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+              </ul>
             <div>
                 <img src="./photos/image_header.jpg" alt="">
                 <h1>NikaShop</h1>
@@ -21,6 +32,7 @@
 
            <div class="search-box">
                <input class="search-txt" type="text" placeholder="Search....">
+               <i class="fas fa-search" style="font-size: 35px; padding-top: 5px;"></i>
            </div>
            
            <div class="right_nav">       
@@ -29,12 +41,28 @@
            </div>
         </header>
         <main>
-           
-           <div class="top_nav">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Marks</a>
-                <a href="#">Services</a>
+           <div class="btn-group">
+            <button type="button" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Smartphones</button>
+                <button class="dropdown-item" type="button">Tablets</button>
+                <button class="dropdown-item" type="button">TV</button>
+              </div>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marks</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Apple</button>
+                <button class="dropdown-item" type="button">Samsung</button>
+                <button class="dropdown-item" type="button">Huawei</button>
+              </div>
+            <button type="button" class="btn btn-warning">Service</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Top offers</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Playstation</button>
+                <button class="dropdown-item" type="button">Video</button>
+                <button class="dropdown-item" type="button">Camera</button>
+              </div>
+            <button type="button" class="btn btn-dark">Help</button>
            </div>
 
            <div class="slideshow"></div>
@@ -121,6 +149,11 @@
                 <div class="footer-heading footer-2">
                     <h2>About us</h2>
                     <h2 id="social">Social Media:</h2>
+                        <div class="media">
+                        <i class="fab fa-facebook" style="font-size: 40px; padding-right: 20px;"></i>
+                        <i class="fab fa-instagram" style="font-size: 40px; padding-right: 20px;"></i>
+                        <i class="fab fa-twitter" style="font-size: 40px;"></i>
+                        </div>
                 </div>
                 <div class="footer-heading footer-3">
                     <h2>Top Category</h2>
@@ -138,9 +171,9 @@
             <div class="footer-bottom">
                 &copy; 2021 NikaShop | Designed by Nikolay Kolev
                 <div class="credit-card">
-                     <img src="./photos/visa.png" width="2%" alt="visa">
-                     <img src="./photos/masterCard.png" width="2%" alt="masterCard">
-                     <img src="./photos/visa.png" width="2%" alt="visa">
+                     <img src="./photos/visa.png" width="3%" alt="visa">
+                     <img src="./photos/masterCard.png" width="3%" alt="masterCard">
+                     <img src="./photos/visa.png" width="3%" alt="visa">
                 </div>
             </div>
           </div>
